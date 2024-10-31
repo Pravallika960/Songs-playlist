@@ -78,14 +78,14 @@ FROM Playlist_Songs ps
 JOIN Songs s ON ps.song_id = s.song_id
 JOIN Albums a ON s.album_id = a.album_id
 JOIN Artists ar ON a.artist_id = ar.artist_id
-WHERE ps.playlist_id = 1;  -- Change to the desired playlist ID
+WHERE ps.playlist_id = 1;  
 
 
--- Get all playlists:
+-- Getiing all playlists:
 SELECT * FROM Playlists;
 
 
--- Get all songs by a specific artist:
+-- For getting  all songs by a specific artist:
 SELECT s.title
 FROM Songs s
 JOIN Albums a ON s.album_id = a.album_id
